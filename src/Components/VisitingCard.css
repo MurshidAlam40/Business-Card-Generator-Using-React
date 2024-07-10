@@ -1,0 +1,103 @@
+
+.visiting {
+    font-family: Arial, sans-serif;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.vcard {
+    width: 400px;
+    height: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.2) ;
+}
+
+.front {
+    background-color: white;
+    position: relative;
+}
+
+.bg-front-img {
+    background-color: #00b2b9;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+}
+
+.card-content p {
+    color: #00b2b9;
+    margin: 5px 0 20px;
+}
+.front .card-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: linear-gradient(to right, white 50%, #00b2b9 50%);
+    z-index: 1000;
+}
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #00b2b9;
+}
+
+.card-logo {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-logo img {
+    width: 65px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card-logo p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.modal-header .btn-close{
+    box-shadow: none;
+    background-color: red;
+}
+
+.card-logo-text{
+    width: 65px;
+    font-size: 16px;
+    font-weight: 800;
+
+}
